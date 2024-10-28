@@ -31,6 +31,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <nav className={"bg-gray-600 text-white"}>
+        <ul className={"flex justify-center gap-4 p-4 font-bold text-lg"}>
+          <li className={"cursor-pointer"}>Home</li>
+          <li className={"cursor-pointer"}>About</li>
+          <li className={"cursor-pointer"}>Blogs</li>
+          <li className={"cursor-pointer"}>Contact</li>
+        </ul>
+       </nav>
         {children}
       </body>
     </html>

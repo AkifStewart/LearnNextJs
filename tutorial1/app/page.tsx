@@ -2,42 +2,39 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px]  justify-items-center min-h-screen b-20 gap-16 font-[family-name:var(--font-geist-sans)]">
+    
       {/* Main content */}
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <main className="flex flex-col gap-8 row-start-2  sm:items-start">
+      
         {/* Logo */}
-       <h1 className="text-3xl sm:text-5xl font-bold text-center sm:text-left">Hunding Coder</h1>
+       
+       <h1 className="text-3xl sm:text-5xl font-bold sm:text-left">Hunding Coder</h1>
         {/* Instructions */}
         <p className="styles.description">
           A blog project for hunding coders
         </p>
 
         {/* Create 4 cards with images and text in them */}
-
-        <div className="grid grid-cols-2 gap-4">
-          {/* Card 1 */}
-          <a href="#" className="flex flex-col items-center gap-2 p-4 border border-gray-300 rounded-lg shadow-lg max-w-[200px]">
-            <h2 className="text-lg font-bold">Card 1</h2>
-            <p className="text-sm">Download the perfect morning nature pictures. Find over 100+ of the best free morning nature images</p>
-          </a>
-
-          {/* Card 2 */}
-          <a href="#" className="flex flex-col items-center gap-2 p-4 border border-gray-300 rounded-lg shadow-lg max-w-[200px]">
-            <h2 className="text-lg font-bold">Card 2</h2>
-            <p className="text-sm">Download the perfect morning nature pictures. Find over 100+ of the best free morning nature images</p>
-          </a>
-
-          {/* Card 3 */}
-          <a href="#" className="flex flex-col items-center gap-2 p-4 border border-gray-300 rounded-lg shadow-lg max-w-[200px]">
-            <h2 className="text-lg font-bold">Card 3</h2>
-            <p className="text-sm">Download the perfect morning nature pictures. Find over 100+ of the best free morning nature images</p>
-          </a>
-
-          {/* Card 4 */}
-          <a href="#" className="flex flex-col items-center gap-2 p-4 border border-gray-300 rounded-lg shadow-lg max-w-[200px]">
-            <h2 className="text-lg font-bold">Card 4</h2>
-            <p className="text-sm">Download the perfect morning nature pictures. Find over 100+ of the best free morning nature images</p>
-          </a>
+        
+        <div className="blogs space-y-4">
+        <h2 className="text-2xl font-bold">Popular Blogs</h2>
+          <div className="blog">
+            <h3 className="text-xl font-bold">Blog 1</h3>
+            <p className="text-lg">Blog 1 description</p>
+          </div>
+          <div className="blog">
+            <h3 className="text-xl font-bold">Blog 2</h3>
+            <p className="text-lg">Blog 2 description</p>
+          </div>
+          <div className="blog">
+            <h3 className="text-xl font-bold">Blog 3</h3>
+            <p className="text-lg">Blog 3 description</p>
+          </div>
+          <div className="blog">
+            <h3 className="text-xl font-bold">Blog 4</h3>
+            <p className="text-lg">Blog 4 description</p>
+          </div>
         </div>
       </main>
       {/* Footer */}
