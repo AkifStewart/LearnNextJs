@@ -9,10 +9,10 @@ export default function Home() {
       
         {/* Logo */}
        
-       <h1 className="text-3xl sm:text-5xl font-bold sm:text-left">Hunding Coder</h1>
+       <h1 className="text-3xl sm:text-5xl font-bold sm:text-left">Hunting Coder</h1>
         {/* Instructions */}
         <p className="styles.description">
-          A blog project for hunding coders
+          A blog project for hunting coders
         </p>
 
         {/* Create 4 cards with images and text in them */}
