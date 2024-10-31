@@ -2,14 +2,17 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px]  justify-items-center min-h-screen b-20 gap-16 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px]  justify-items-center min-h-screen b-20 font-[family-name:var(--font-geist-sans)]">
     
       {/* Main content */}
-      <main className="flex flex-col gap-8 row-start-2  sm:items-start">
+      <main className="flex flex-col gap-4 row-start-2  sm:items-start">
       
         {/* Logo */}
        
        <h1 className="text-3xl sm:text-5xl font-bold sm:text-left">Hunting Coder</h1>
+        <div className="my-2 ">
+        <Image className="border-2 rounded-xl" alt="Hunting Coder" src={"/img-coder.jpg"} width={300} height={300} priority></Image>
+        </div>
         {/* Instructions */}
         <p className="styles.description">
           A blog project for hunting coders
