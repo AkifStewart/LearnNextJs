@@ -2,5 +2,7 @@
     "title": "How to learn TypeScript",
     "content": "TypeScript is a powerful, statically typed superset of JavaScript that adds optional types, classes, and modules to JavaScript. It helps developers write more robust and maintainable code by catching errors early in the development process.\nTo learn TypeScript, follow these steps:\n\n1. **Understand JavaScript**: Since TypeScript is a superset of JavaScript, having a solid understanding of JavaScript is essential.\n2. **Install TypeScript**: Use npm to install TypeScript globally by running `npm install -g typescript`.\n3. **Set Up a Project**: Create a new project directory and initialize it with `tsc --init` to generate a `tsconfig.json` file.\n4. **Write TypeScript Code**: Start writing TypeScript code in `.ts` files. Use types, interfaces, and classes to define your data structures and logic.\n5. **Compile TypeScript**: Use the TypeScript compiler (`tsc`) to compile your TypeScript code into JavaScript.\n6. **Practice**: Build small projects or contribute to open-source projects to gain practical experience.\n\nBy following these steps and practicing regularly, you'll become proficient in TypeScript and be able to leverage its features to write better JavaScript code.",
     "author": "Jane Smith",
-    "date": "2021-10-05"
+    "date": "2021-10-05",
+    "slug": "how-to-learn-typescript",
+    "summary": "TypeScript is a powerful, statically typed superset of JavaScript that adds optional types, classes, and modules to JavaScript."
 }

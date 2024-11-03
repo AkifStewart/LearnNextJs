@@ -2,5 +2,7 @@
     "title": "How to learn Sitecore",
     "content": "Sitecore is a powerful digital experience platform that provides a comprehensive solution for content management and digital marketing. To learn Sitecore, start with the basics of Sitecore architecture and its core components. Familiarize yourself with the Sitecore Experience Platform (XP) and Sitecore Experience Manager (XM). Explore Sitecore's templating engine, which allows you to create reusable templates for your content. Practice creating and managing content items, and learn how to use Sitecore's workflow and versioning features. Additionally, take advantage of Sitecore's extensive documentation and community resources, including forums, blogs, and training courses. Hands-on practice and real-world projects will help solidify your understanding and proficiency in Sitecore.",
     "author": "Thomas Blend",
-    "date": "2020-09-20"
+    "date": "2020-09-20",
+    "slug":"how-to-learn-sitecore",
+    "summary": "Sitecore is a powerful digital experience platform that provides a comprehensive solution for content management and digital marketing."
 }
