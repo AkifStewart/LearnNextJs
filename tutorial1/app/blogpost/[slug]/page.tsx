@@ -27,28 +27,6 @@ export async function getBlog(slug: string) {
 const Page =  async ({ params }: BlogPageProps)  => {
   const { slug } = await params;
   const blog = await getBlog(slug);
-//   const [blog, setBlog] = useState<any>(null);
-//  // const router = useRouter();
-  // useEffect(() => {
-  //   params.then(({ slug }) => {
-  //     setSlug(slug);
-  //   });
-  //    // console.log(slug)
-  //   //  setSlug(params.slug);
-  // }, [params]);
-
-//   useEffect(() => {
-//     if(!slug) return;
-//    // console.log("slug:" +slug);
-//    // let slug = router.query;
-//     fetch(`/api/getblog?slug=${slug}`)
-//       .then(res => res.json())
-//       .then(data => {
-//         console.log(data);
-//         setBlog(data);
-//       });
-//   }, [slug]);
-
   return (
     <main className='w-1/2 mx-auto'>
       <div className="flex flex-col gap-4 items-center my-8">
@@ -56,7 +34,10 @@ const Page =  async ({ params }: BlogPageProps)  => {
           <>
             <h1 className='text-3xl'>{blog.title}</h1>
             <hr />
-            <p>{blog.content}</p>
+            <p
+      dangerouslySetInnerHTML={{__html: blog.content}}
+    />
+            {/* <p>{blog.content}</p> */}
           </>
         ) : (
           <h1>Loading...</h1>
