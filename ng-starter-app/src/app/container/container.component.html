@@ -11,6 +11,6 @@
     <!-- <input (input)="onTextChanged($event)"/><br/>
     <p>Name: {{name}}</p> -->
     <!-- <app-search></app-search> -->
-    <app-prod-search></app-prod-search>
-    <product-list></product-list>
+    <app-prod-search (searchTextChangedEvent)="setSearchText($event)"></app-prod-search>
+    <product-list [searchText]="searchText"></product-list>
 </div>
