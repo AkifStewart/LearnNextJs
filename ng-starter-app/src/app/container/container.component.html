@@ -13,5 +13,5 @@
     <!-- <app-search></app-search> -->
     <app-prod-search (searchTextChangedEvent)="setSearchText($event)"></app-prod-search>
     <product-list [searchText]="searchText" #productListComponent></product-list>
-    <product-detail *ngIf="productListComponent.selectedProduct"></product-detail>
+    <product-detail *ngIf="productListComponent.selectedProduct" [productListComponent]="productListComponent"></product-detail>
 </div>
