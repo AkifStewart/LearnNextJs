@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ContentChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'featured-brands',
@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class FeaturedBrandsComponent {
 
+  @ContentChild('title') titleText: ElementRef;
+
+  showTitleText(){
+    console.log(this.titleText);
+  }
 }
