@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { CommonModule } from '@angular/common';
 // import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./header/header.component";
@@ -13,4 +13,16 @@ import { ContainerComponent } from "./container/container.component"
 })
 export class AppComponent {
   title = 'ng-starter-app';
+
+  fullName: string = '';
+
+  @ViewChildren('inputEl') inputElements : QueryList<ElementRef>;
+
+  show(){
+    this.inputElements.forEach(element => {
+       this.fullName += element.nativeElement.value + ' ';
+    });
+    this.fullName = this.fullName.trim();
+    
+  }
 }
