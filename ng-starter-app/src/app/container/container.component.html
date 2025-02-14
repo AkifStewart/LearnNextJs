@@ -8,10 +8,29 @@
     <button (click)="decrementCartValue()" [disabled]="addToCart == 0">-</button>
     <span>{{addToCart}}</span>
     <button [disabled]="addToCart == this.product.inStock" (click)="incrementCartValue()">+</button>  -->
-    <!-- <input (input)="onTextChanged($event)"/><br/>
+  <!-- <input (input)="onTextChanged($event)"/><br/>
     <p>Name: {{name}}</p> -->
-    <!-- <app-search></app-search> -->
-    <app-prod-search (searchTextChangedEvent)="setSearchText($event)"></app-prod-search>
-    <product-list [searchText]="searchText" #productListComponent></product-list>
-    <product-detail *ngIf="productListComponent.selectedProduct" [productListComponent]="productListComponent"></product-detail>
+  <!-- <app-search></app-search> -->
+  <app-prod-search (searchTextChangedEvent)="setSearchText($event)"></app-prod-search>
+  <product-list [searchText]="searchText" #productListComponent></product-list>
+  <product-detail *ngIf="productListComponent.selectedProduct"
+    [productListComponent]="productListComponent"></product-detail>
+
+  <div class="ekart-featured-products">
+    <div class="ekart-featured-product-heading">
+      <h1>Latest Arrival in Popular Brands</h1>
+    </div>
+    <featured-brands>
+      <span class="title-text">New Arrivals in Nike</span>
+      <span class="btn-text">Show New Arrivals in Nike</span>
+    </featured-brands>
+    <featured-brands>
+      <span class="title-text">New Arrivals in Adidas</span>
+      <span class="btn-text">Show New Arrivals in Adidas</span>
+    </featured-brands>
+    <featured-brands>
+      <span class="title-text">New Arrivals in Reebok</span>
+      <span class="btn-text">Show New Arrivals in Reebok</span>
+    </featured-brands>
+  </div>
 </div>
