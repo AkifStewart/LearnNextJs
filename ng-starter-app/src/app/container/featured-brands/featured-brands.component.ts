@@ -1,4 +1,4 @@
-import { Component, ContentChild, ElementRef } from '@angular/core';
+import { Component, ContentChild, ContentChildren, ElementRef, QueryList } from '@angular/core';
 
 @Component({
   selector: 'featured-brands',
@@ -9,8 +9,12 @@ import { Component, ContentChild, ElementRef } from '@angular/core';
 export class FeaturedBrandsComponent {
 
   @ContentChild('title') titleText: ElementRef;
+  
+  @ContentChildren('title') titleTexts: QueryList<ElementRef>;
 
   showTitleText(){
-    console.log(this.titleText);
+ //   console.log(this.titleText);
+
+    this.titleTexts.forEach((t) => {console.log(t.nativeElement)})
   }
 }
